@@ -1,0 +1,27 @@
+{
+  "name": "projektAWS",
+  "version": "0.0.0",
+  "description": "AWS worker",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Izabela Borowiecka",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^0.7.0",
+    "aws-sdk": "^2.0.0-rc13"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iza16/aws-worker-app"
+  },
+  "bugs": {
+    "url": "https://github.com/iza16/aws-worker-app/issues"
+  },
+  "homepage": "https://github.com/iza16/aws-worker-app"
+}

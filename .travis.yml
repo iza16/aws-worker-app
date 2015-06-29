@@ -1,0 +1,12 @@
+language: node_js
+before_install: npm install -g mocha
+deploy:
+  provider: s3
+  access_key_id: AKIAIDPKVI45XOOBATFA
+  secret_access_key:
+    secure: FxJ5FP8+T46L+rcSOHyShg2MP1rA6OqO29Z8pz3obKvE8WDt6c7TR/5rEvjvebgZvARKsIZEXz+P1cxl99vB67db7aTdveUc91Kj4BPGK/wGAjtySnIgXNciNCJ/u3DntptBpuh1ZpUfgxrJfhiBvnEK35liwoyjLRKj50vaQCU+ZCUqJEvtpHmi5MbruD1LcKbYcvsodSfvsE3j+7+beNjtETea3nrmoYxA+aPdJMrSo134HAR4zDpm710tyBHv2VCeka2+VCSJmzsNo83NHX0rQthjejOys5zuZV33A6F8ttw/J9kT8+p84YbU/g7TiSa9P4M48QtUwm9IQNIHjVIEXlR0AQZHhnR+PhqRYc+cJARnNIJQ/mNdyEr1PGA9o+ddGBb++zmLKFHG8fMKno7AiYC4yJ5ch/oKaG/PkGEljAQR3BB3vliQX1oqo1CvALL/TNuQX/BjuScPweiQ7t2u/M+s3nIslbANE7jyu2nIBA44fLAIbxUbEuye4BwBe6uK3IL8+qZdTl9AiRBd6LgeCvrcA9cWIXLzoMYR7cxTki5C0lVn6HFBxry8nkKxhk0zg1f1DyZyksKU73F29tFfqqkWKHi8HZchZ6xRAjmlnsLp6Ze4hU0R/Ib0+Vq/aMCH/cI2YKzbgXW7rD1xVgcimfctgqUVduK2jSnuloM=
+  bucket: borowiecka
+  upload-dir: awsWorkerApp
+  acl: public_read_write
+  on:
+    repo: iza16/aws-worker-app
