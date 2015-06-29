@@ -69,7 +69,7 @@ var myServer = function(){
 			requestt.on('finish', function (){
 				console.log('jestem tu po zapisaniu pliku na dysk');
 
-				//zmieniamy coś w pliku roździelczość i cośtam jeszcze
+				//zmieniamy coś w pliku
 				gm('tmp/'+messageinfo.key.substring(10))
 				.colorize(200, 200, 256)
 				.autoOrient()
