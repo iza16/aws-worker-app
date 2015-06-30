@@ -44,7 +44,7 @@ var myServer = function(){
 		
 		//Czy jest jakaś wiadomość
 		if(!data.Messages) {
-			console.log("No message in queue.");
+			console.log("Brak wiadomości w kolejce");
 		} else {
 			
 			//pobranie danych z body wiadomosci w kolejce i zrobienie z nich tablicy
@@ -108,7 +108,7 @@ var myServer = function(){
 									Replace: true
 									}
 								],
-								DomainName: "czubakProjState", 
+								DomainName: "borowieckaStatus", 
 								ItemName: 'ITEM001'
 							};
 							simpledb.putAttributes(paramsdb, function(err, datass) {
